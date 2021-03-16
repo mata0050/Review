@@ -118,12 +118,17 @@ span{
 }
 
 p{
+  /* text-overflow: hidden; */
   font-weight: 300;
   font-family: 'Roboto';
   font-size: 1.2em;
   color: hsl(211, 11%, 54%);
   line-height: 1.4em;
   margin: 15px 0;
+  max-height: 78px;
+  overflow: hidden;
+  white-space: wrap;
+
 }
 
 a{
@@ -136,11 +141,15 @@ a{
 a:first-child{
   margin-right: 20px;
 }
-a:hover,
-a:focus{
+a:hover{
   border: 1px solid #48A6E8;
   border-radius: 5px;
   cursor: pointer;
+}
+
+a:focus{
+  outline: none !important;
+
 }
 
 button{
@@ -167,6 +176,12 @@ button{
   h1{
     margin-top: 20%;
     font-size: 3em;
+  }
+
+  p{
+   max-height: 500px;
+    /* overflow:inherit; */
+    /* white-space: normal; */
   }
 
 }

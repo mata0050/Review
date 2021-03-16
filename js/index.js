@@ -2,7 +2,7 @@
 const dataCard = document.querySelector('.dataCard');
 const btnBack = document.querySelector('#back');
 const btnFront = document.querySelector('#front');
-const btnSurprise = document.querySelector('button');
+const btnSurprise = document.querySelector('#surprise');
 const imgContainer = document.querySelector('.imgContainer');
 
 let cardNumber = 0;
@@ -57,7 +57,7 @@ getCard();
 **************************************/
 
 function randomNumber(){
-  return Math.floor(Math.random() * 4);
+  return Math.floor(Math.random() * reviewArray.length);
 }
 
 //**********************************  BUTTONS  *********************** */
